@@ -11,7 +11,7 @@ import '../css/Profile.css'; // Importing the profile CSS
 const Home = () => {
   const [courses, setCourses] = useState([]); // State to hold the fetched courses
   const [enrolledCourses, setEnrolledCourses] = useState([]); // State to manage enrolled courses
-  const [isProfileView, setIsProfileView] = useState(false); // Track if we're viewing profile or courses
+  const [isProfileView] = useState(false); // Track if we're viewing profile or courses
 
   // Fetch courses from the backend API when the component mounts
   useEffect(() => {
