@@ -1,0 +1,135 @@
+/* Home.css */
+.courses-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h2 {
+    color: #4CAF50; /* Green color for the main heading */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .courses-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .available-courses,
+  .enrolled-courses {
+    width: 48%; /* Each side takes up nearly half of the container */
+  }
+  
+  .available-courses h3,
+  .enrolled-courses h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .course-item {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-item p {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .enroll-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .enroll-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styling for Enrolled Courses Table */
+  .enrolled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .enrolled-table th, .enrolled-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .enrolled-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .enrolled-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .unenroll-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .unenroll-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  ul p {
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .courses-layout {
+      flex-direction: column; /* Stack the columns on smaller screens */
+      gap: 20px;
+    }
+  
+    .available-courses,
+    .enrolled-courses {
+      width: 100%;
+    }
+  
+    .enroll-button {
+      width: auto;
+    }
+  }
+  

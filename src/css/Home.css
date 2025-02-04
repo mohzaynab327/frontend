@@ -1,0 +1,126 @@
+/* app.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%; /* Ensure the html and body take full viewport height */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column; /* Stack navbar and content vertically */
+    height: 100%; /* Ensure the container takes up the full screen height */
+  }
+  
+  .navbar {
+    background-color: #4CAF50; /* Green background */
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent navbar from shrinking */
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    font-size: 18px;
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .content {
+    padding: 20px;
+    flex-grow: 1; /* Ensure the content section takes the remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    color: #4CAF50; /* Green text */
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Ensure the navbar and content don't overflow on small screens */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    .content {
+      padding: 15px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  /* Responsive design for mobile screens */
+  @media (max-width: 480px) {
+    .navbar ul li {
+      font-size: 16px; /* Smaller text size for smaller screens */
+    }
+  
+    h1, h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .content {
+      padding: 10px;
+    }
+  
+    button {
+      padding: 14px;
+      font-size: 18px;
+    }
+  }
+  
